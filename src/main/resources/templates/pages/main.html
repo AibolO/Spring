@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sports Master</title>
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Logo<span>.</span></a>
+		<ul class="navigation">
+			<li><a href="#banner">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#category">Category</a></li>
+			<li><a href="#tournaments">Tournaments</a></li>
+		</ul>
+		<ul class="auth">
+			<li><a href="/logout">Logout</a></li>
+		</ul>
+	</header>
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>Always Choose Good</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic iste impedit id officiis adipisci, nostrum esse sequi minus, repellendus provident enim.</p>
+			<a href="#tournaments" class="btn">Tournaments</a>
+		</div>
+	</section>
+
+	<section class="about" id="about">
+		<div class="row">
+			<div class="col50">
+				<h2 class="titleText"><span>A</span>bout Us</h2>
+				<p>Lorem ipsum dolor, sit amet, consectetur adipisicing elit. Explicabo vitae in atque consectetur necessitatibus, expedita excepturi, aut quis doloribus repellat eligendi quasi quae ex. Vero odit illo quia ducimus, esse veniam assumenda numquam! Quod praesentium quis, tenetur assumenda tempora laborum numquam minima. Eligendi iure ducimus totam ex molestias exercitationem dolorum.<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, sequi porro delectus a perferendis maiores vel officia tempora, debitis atque reiciendis sit numquam facere, officiis assumenda ab earum nam et.</p>
+			</div>
+			<div class="col50">
+				<div class="imgBx">
+					<img src="aboutImg.jpg">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="category" id="category">
+		<div class="title">
+			<h2 class="titleText">Sport <span>C</span>ategories</h2>
+			<p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit.</p>
+		</div>
+		<div class="content">
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport1.png">
+				</div>
+				<div class="text">
+					<h3>Football</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport2.png">
+				</div>
+				<div class="text">
+					<h3>Cricket</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport3.png">
+				</div>
+				<div class="text">
+					<h3>Hockey</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport4.png">
+				</div>
+				<div class="text">
+					<h3>Tennis</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport5.png">
+				</div>
+				<div class="text">
+					<h3>Volleyball</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport6.png">
+				</div>
+				<div class="text">
+					<h3>Table Tennis</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport7.png">
+				</div>
+				<div class="text">
+					<h3>Basketball</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport8.png">
+				</div>
+				<div class="text">
+					<h3>Baseball</h3>
+				</div>
+			</a>
+
+			<a class="box" href="/tournaments">
+				<div class="imgBx">
+					<img src="sport9.png">
+				</div>
+				<div class="text">
+					<h3>Golf</h3>
+				</div>
+			</a>
+		</div>
+
+		<div class="title">
+			<a href="/tournaments" class="btn">View All</a>
+		</div>
+	</section>
+
+	<section class="tournaments" id="tournaments">
+		<div class="title">
+			<h2 class="titleText">Recommend <span>T</span>ournaments</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia magni reiciendis, ab! Voluptates, mollitia laborum.</p>
+		</div>
+		<div class="content">
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="sport1.png">
+				</div>
+				<div class="text">
+					<h3>Almaty Football</h3>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="sport4.png">
+				</div>
+				<div class="text">
+					<h3>Almaty Tennis</h3>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="sport5.png">
+				</div>
+				<div class="text">
+					<h3>Almaty Volleyball</h3>
+				</div>
+			</div>
+
+			<div class="box">
+				<div class="imgBx">
+					<img src="sport7.png">
+				</div>
+				<div class="text">
+					<h3>Almaty Basketball</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		
+	</footer>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', function(){
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+	</script>
+</body>
+</html>
