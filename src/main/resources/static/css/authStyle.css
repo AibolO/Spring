@@ -182,3 +182,7 @@ form h2 {
 .submitBtn:active {
 	opacity: 0.8;
 }
+
+button {
+	color: red;
+}
